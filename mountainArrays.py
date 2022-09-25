@@ -4,12 +4,12 @@ def mountain_arrays(arr):
     if len(arr) < 3: # if array is less than 3 elements, it is not a mountain
         return False
     i = 0
-    while i < len(arr) - 1 and arr[i] < arr[i + 1]: # while the array is increasing
+    while i < len(arr) - 1 and arr[i] < arr[i + 1]: # while the array is increasing < 
         i += 1
         if i == 0 or i == len(arr) - 1: # if the array is increasing and the first or last element is reached,
              #it is not a mountain
             return False
-    while i < len(arr) - 1 and arr[i] > arr[i + 1]: # pylint: disable=C0326
+    while i < len(arr) - 1 and arr[i] > arr[i + 1]: # while the array is decreasing > 
         i += 1
     return i == len(arr) - 1 # at the end of the array should be equal to the length of the array
 
