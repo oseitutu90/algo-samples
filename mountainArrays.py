@@ -27,7 +27,7 @@ def mountain_arrays_peak(arr):
     max_peak = 0 # set max peak to 0
     while i < len(arr) - 1 and arr[i] < arr[i + 1]: # while the array is increasing
         i += 1
-        if i == 0 or i == len(arr) - 1:
+        if i == 0 or i == len(arr) - 1: # if the array is increasing and the first or last element is reached,
             return False
         if arr[i] > max_peak:
             max_peak = arr[i]

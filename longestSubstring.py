@@ -1,23 +1,15 @@
 """find the longest substring"""
-
-def longest_substring(str):
-    """find the longest substring"""
-    if len(str) == 0:
-        return 0
-    if len(str) == 1:
-        return 1
-    longest = 1
-    current = 1
-    for i in range(1, len(str)):
-        if str[i] == str[i-1]:
-            current += 1
+def length_of_longest_substring(s):
+    """longest contiguous substring"""
+    length_of_sub = 0
+    longest_sub_str = ""
+    for i in range(len(s)):
+        if s[i] not in longest_sub_str:
+            longest_sub_str += s[i]
+            length_of_sub = max(length_of_sub, len(longest_sub_str))
         else:
-            if current > longest:
-                longest = current
-            current = 1
-    if current > longest:
-        longest = current
-    return longest
-
-print(longest_substring("abcabcbb"))
-print(longest_substring("bbbbb"))
+            longest_sub_str = longest_sub_str[longest_sub_str.index(s[i]) + 1:] + s[i]
+    return length_of_sub
+   
+print(length_of_longest_substring("01234567893"))
+print(length_of_longest_substring("pwwkew") == 3)
