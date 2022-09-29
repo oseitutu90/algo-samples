@@ -3,10 +3,11 @@
 def maximum_area(height):
     max_area = 1
     left = 0
-    right = len(height) - 1
-    while left < right:
-        max_area = max(max_area, min(height[left], height[right]) * (right - left))
-        if height[left] < height[right]:
+    right = len(height) - 1 
+    while left < right: # while left and right are not the same
+        max_area = max(max_area, min(height[left], height[right]) * (right - left)) 
+        # max of current max_area and min of left and right * difference of left and right  
+        if height[left] < height[right]: # if left is less than right
             left += 1
         else:
             right -= 1
