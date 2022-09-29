@@ -1,7 +1,7 @@
 """Container with most water"""
 
 def maximum_area(height):
-    max_area = 1
+    max_area = 0 # initialize max_area
     left = 0
     right = len(height) - 1 
     while left < right: # while left and right are not the same
