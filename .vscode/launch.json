@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch LongestSubstring",
+            "request": "launch",
+            "mainClass": "LongestSubstring",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
             "name": "Python: Module",
             "type": "python",
             "request": "launch",

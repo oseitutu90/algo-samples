@@ -1,16 +1,25 @@
 """find the longest substring"""
 def length_of_longest_substring(s):
     """longest contiguous substring"""
-    length_of_longest_substring = 0
-    longest_sub_string = ""
-    for i in range(len(s)):
-        if s[i] not in longest_sub_string:
-            longest_sub_string += s[i]
-            length_of_longest_substring = max(length_of_longest_substring, len(longest_sub_string))
+    if not s:
+        return 0
+    start = 0
+    end = 0
+    max_len = 0
+    # use a set to store the characters in the current substring
+    char_set = set() 
+    while end < len(s):
+        if s[end] not in char_set:
+            # if the character is not in the set, add it to the set
+            char_set.add(s[end])
+            end += 1
+            max_len = max(max_len, end - start)
         else:
-            longest_sub_string = longest_sub_string[longest_sub_string.index(s[i]) + 1:] + s[i] 
-            # slice from the index of the first occurence of s[i] + 1 to the end of the string and add s[i] to the end
-    return length_of_longest_substring
+        # if the character is in the set, remove the character at the start
+            char_set.remove(s[start])
+            start += 1
+    return max_len
+
    
 print(length_of_longest_substring("01234567893"))
-print(length_of_longest_substring("pwwkew") == 3)
+print(length_of_longest_substring("pwwkew")==3)
