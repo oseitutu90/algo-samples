@@ -15,11 +15,15 @@ def maximum_area(height):
 
 
 
-print(maximum_area([5,4,2,1,4]))
+print(maximum_area([5,4,2,1,4])==16)
 
 #|
 #| |     |
 #| |     |
 #| | |   |
 #| | | | |
+
+
+
+
 print(maximum_area([1,8,6,2,5,4,8,3,7]) == 49)

@@ -20,7 +20,7 @@ public class LongestSubstring {
                 set.add(s.charAt(j));
                 j++;
                 // 6. Update the max length
-                max = Math.max(max, j - i);
+                max = Math.max(max, j - i);// 7. If the set contains the character at j, remove the character at i from the set
             }
             // 7. If the set contains the character at j, remove the character at i
             else {
