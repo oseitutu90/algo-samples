@@ -10,21 +10,21 @@ public class LongestSubstring {
             // 1. Create a set to store the characters
         Set<Character> set = new HashSet<>();
             // 2. Create two pointers to store the start and end of the substring
-        int i = 0, j = 0;
+        int firstLetterIndex = 0, LastLetterIndex = 0;
             // 3. Create a variable to store the length of the longest substring
         int max = 0;
             // 4. Loop through the string
-        while (i < s.length() && j < s.length()){
+        while (firstLetterIndex < s.length() && LastLetterIndex < s.length()){
             // 5. If the set does not contain the character at j, add it to the set
-            if (!set.contains(s.charAt(j))){
-                set.add(s.charAt(j));
+            if (!set.contains(s.charAt(LastLetterIndex))){
+                set.add(s.charAt(LastLetterIndex));
                 j++;
                 // 6. Update the max length
-                max = Math.max(max, j - i);// 7. If the set contains the character at j, remove the character at i from the set
+                max = Math.max(max, LastLetterIndex - firstLetterIndex);// 7. If the set contains the character at j, remove the character at i from the set
             }
             // 7. If the set contains the character at j, remove the character at i
             else {
-                set.remove(s.charAt(i++));
+                set.remove(s.charAt(firstLetterIndex++));
             }
         }
         return max;
