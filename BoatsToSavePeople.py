@@ -8,7 +8,7 @@ def numRescueBoats(people, limit):
     i = 0
     j = len(people) - 1 # set j to the last index of the list
     while i <= j:
-        boats += 1
+        boats += 1 # increase boat counts .
         if people[i] + people[j] <= limit:
             i += 1
         j -= 1
