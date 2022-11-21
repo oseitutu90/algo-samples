@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TicTacToe",
+            "request": "launch",
+            "mainClass": "TicTacToe",
+            "projectName": "algo-samples_6bd8fc04"
+        },
+        {
+            "type": "java",
             "name": "Launch singleNumberProblem",
             "request": "launch",
             "mainClass": "singleNumberProblem",

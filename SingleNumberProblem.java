@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class singleNumberProblem {
+public class SingleNumberProblem {
     public static void main(String[] args) {
         int[] nums = {2,2,1,1,4,4,5,6,6};
         System.out.println(findSingleNumber(nums));
