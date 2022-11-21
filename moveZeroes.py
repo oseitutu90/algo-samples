@@ -17,4 +17,4 @@ def move_zeroes(nums):
         start += 1
     return nums
 
-print(move_zeroes([9,0,7,8,4,8,2,8,8,0,0,0]))
+print(move_zeroes([0,9,0,7,8,4,8,2,8,8,0,0,0]))

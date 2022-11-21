@@ -18,7 +18,7 @@ public class LongestSubstring {
             // 5. If the set does not contain the character at j, add it to the set
             if (!set.contains(s.charAt(LastLetterIndex))){
                 set.add(s.charAt(LastLetterIndex));
-                j++;
+                LastLetterIndex++;
                 // 6. Update the max length
                 max = Math.max(max, LastLetterIndex - firstLetterIndex);// 7. If the set contains the character at j, remove the character at i from the set
             }

@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch singleNumberProblem",
+            "request": "launch",
+            "mainClass": "singleNumberProblem",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindTheMissingNumber",
+            "request": "launch",
+            "mainClass": "FindTheMissingNumber",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "type": "java",
+            "name": "Launch balance",
+            "request": "launch",
+            "mainClass": "balance",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "type": "java",
+            "name": "Launch minimumBribe",
+            "request": "launch",
+            "mainClass": "minimumBribe",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindBadVersion",
+            "request": "launch",
+            "mainClass": "FindBadVersion",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MoveZeroes",
+            "request": "launch",
+            "mainClass": "MoveZeroes",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "type": "java",
             "name": "Launch LongestSubstring",
             "request": "launch",
             "mainClass": "LongestSubstring",
