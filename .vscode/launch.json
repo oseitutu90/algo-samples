@@ -1,0 +1,64 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch singleNumberProblem",
+            "request": "launch",
+            "mainClass": "singleNumberProblem",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindTheMissingNumber",
+            "request": "launch",
+            "mainClass": "FindTheMissingNumber",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "type": "java",
+            "name": "Launch balance",
+            "request": "launch",
+            "mainClass": "balance",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "type": "java",
+            "name": "Launch minimumBribe",
+            "request": "launch",
+            "mainClass": "minimumBribe",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindBadVersion",
+            "request": "launch",
+            "mainClass": "FindBadVersion",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MoveZeroes",
+            "request": "launch",
+            "mainClass": "MoveZeroes",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestSubstring",
+            "request": "launch",
+            "mainClass": "LongestSubstring",
+            "projectName": "algo-samples_f10a822f"
+        },
+        {
+            "name": "Python: Module",
+            "type": "python",
+            "request": "launch",
+            "module": "enter-your-module-name",
+            "justMyCode": true
+        }
+    ]
+}

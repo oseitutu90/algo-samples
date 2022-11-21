@@ -1,0 +1,16 @@
+"""Find the single occurrence number"""
+
+
+def singleNumber(nums):
+    """Return the single occurrence number"""
+    nums.sort()
+    for i in range(0, len(nums), 2):
+        if i == len(nums) - 1:
+            return nums[i]
+        if nums[i] != nums[i + 1]:
+            return nums[i]
+    
+
+
+
+print(singleNumber([4,4,6,6,7,7,8,8]))
