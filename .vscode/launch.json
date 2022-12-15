@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MiddleofLinkedList",
+            "request": "launch",
+            "mainClass": "MiddleofLinkedList",
+            "projectName": "algo-samples_90fca88f"
+        },
+        {
+            "type": "java",
             "name": "Launch singleNumberProblem",
             "request": "launch",
             "mainClass": "singleNumberProblem",
