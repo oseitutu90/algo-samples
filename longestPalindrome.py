@@ -9,3 +9,5 @@ def longestPalindrome(words):
             if word[i:] == word[i:][::-1]:
                 return word
     return ""
+
+print(longestPalindrome(["lc","cl","gg"]))

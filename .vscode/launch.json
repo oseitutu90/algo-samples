@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MinimumBribe",
+            "request": "launch",
+            "mainClass": "MinimumBribe",
+            "projectName": "algo-samples_90fca88f"
+        },
+        {
+            "type": "java",
             "name": "Launch MiddleofLinkedList",
             "request": "launch",
             "mainClass": "MiddleofLinkedList",
