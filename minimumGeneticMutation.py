@@ -8,10 +8,10 @@ def minMutation(start, end, bank):
     queue = [(start, 0)]  # (gene, step)
     while queue:
         gene, step = queue.pop(0) # BFS
-        if gene == end:
+        if gene == end:  # if found
             return step
         for i in range(len(gene)): # for each gene
-            for c in 'ACGT': # for each char
+            for c in 'ACGT': # for each char in 'ACGT'
                 new_gene = gene[:i] + c + gene[i+1:] # replace char 
                 if new_gene in bank: # if new gene in bank
                     bank.remove(new_gene)
